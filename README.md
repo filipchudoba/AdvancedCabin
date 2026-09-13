@@ -1,7 +1,5 @@
 # Advanced Cabin
 
-<a href="https://buymeacoffee.com/filipchudoba"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Support the project — Buy Me a Coffee" height="50"></a>
-
 Advanced Cabin adds configurable passenger seats, overhead panels, oxygen masks,
 an enhanced FAP and AnyAirline seatback IFE to X-Plane 12.
 
@@ -28,6 +26,8 @@ and downloadable releases.
 - [Cabin Studio — Linux x64](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/Cabin-Studio-linux-x64.zip)
 - [Cabin Studio — macOS Apple Silicon](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/Cabin-Studio-macos-arm64.zip)
 - [Cabin Studio — macOS Intel](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/Cabin-Studio-macos-x64.zip)
+
+<a href="https://buymeacoffee.com/filipchudoba"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Support the project — Buy Me a Coffee" height="40"></a>
 
 ## Current limitations
 
