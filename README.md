@@ -6,6 +6,8 @@ an enhanced FAP and AnyAirline seatback IFE to X-Plane 12.
 [Download version 1.0.0](https://github.com/filipchudoba/AdvancedCabin/releases/tag/v1.0.0)
  · [AnyAirline IFE provider](https://anyairline.app/)
 
+> **Loading seats:** Seats may take up to about **one minute** to appear in X-Plane. Please allow the cabin to finish loading.
+
 ## Before downloading
 
 Version 1.0.0 supports **already prepared Advanced Cabin ToLiss A319/A320/A321
@@ -61,6 +63,8 @@ Aircraft object attachments, click regions and sound integration must already
 be installed. This ZIP alone does not convert an untouched ToLiss aircraft.
 A339/A346 work is deferred. Automated checks cover the repaired native plugin;
 the performance repair has been confirmed in X-Plane; the new IFE lighting still needs visual confirmation.
+
+> **Loading seats:** Seats may take up to about **one minute** to appear in X-Plane. Allow the cabin to finish loading.
 
 ## 1. Install or update the plugin
 
@@ -135,9 +139,10 @@ manually linked helper programs are not required for editing.
    and keeps a local draft.
 3. Adjust colors or drop artwork into **Magazine**, **Safety card** or
    **Advertisements**. Magazine and safety-card artwork are separate inputs.
-4. **Export JSON only** saves configuration without new textures. **Export cabin**
-   builds the full cabin, then opens the destination dialog. **Save cabin folder**
-   saves another copy of a completed build.
+4. Open **Export cabin**. **Export layout.json** saves configuration without new
+   textures. **Export cabin folder** prepares the full cabin, then opens the
+   destination dialog. A completed build can be saved again without rebuilding.
+   Older Studio packages label these actions **Export JSON only** and **Export cabin**.
 5. Install the result in the livery's `objects` folder.
 
 Exports run locally. Keep Studio open until the build finishes. Existing
@@ -146,7 +151,7 @@ package is not edited in place.
 
 **Manual paints:** configuration-only changes retain imported textures. Changing
 Studio colors or artwork requires rebuilding textures and can replace manual
-paint. Use **Export JSON only** for row changes when keeping painted PNGs. The
+paint. Use **Export layout.json** for row changes when keeping painted PNGs. The
 current preview shows editor colors/equipment, not all imported painted images;
 verify final artwork in X-Plane.
 
@@ -220,10 +225,17 @@ Settings does not replace aircraft operational controls.
 
 ## 7. Get IFE content
 
-**AnyAirline is the IFE provider.** Download the free app/Connector from
-[anyairline.app](https://anyairline.app/) and follow its current X-Plane connection
-setup. Optional paid AnyAirline features are separate. Keep the Connector running
-for live content.
+**AnyAirline is the IFE provider.** Download the free **AnyAirline Connector**
+from [anyairline.app](https://anyairline.app/).
+
+1. Open the Connector’s **Settings**.
+2. Select **X-Plane Experimental**.
+3. Link your **X-Plane folder**.
+4. Set the feed rate to **1 FPS** (recommended).
+5. Click **Start Experimental Feed**.
+
+Keep the Connector running for live content. Optional paid AnyAirline features
+are separate.
 
 Choose an IFE-equipped seat, enable its live feed and power the screen on.
 Economy IFE belongs to **Type 1**. Overhead monitors have separate enable/live
