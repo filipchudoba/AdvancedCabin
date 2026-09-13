@@ -1,5 +1,7 @@
 # Advanced Cabin
 
+[Support the project — Buy Me a Coffee](https://buymeacoffee.com/filipchudoba)
+
 Advanced Cabin adds configurable passenger seats, overhead panels, oxygen masks,
 an enhanced FAP and AnyAirline seatback IFE to X-Plane 12.
 
