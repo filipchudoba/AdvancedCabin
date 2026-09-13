@@ -34,6 +34,9 @@ External apron lighting can still reach some instanced cabin objects. The indepe
 
 ## User guide
 
+[Public downloads](https://github.com/filipchudoba/AdvancedCabin/releases/latest)
+ · [Online guide](https://github.com/filipchudoba/AdvancedCabin#readme)
+
 ## Choose your download
 
 | Download | Purpose | Location |
