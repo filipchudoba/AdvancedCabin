@@ -1,5 +1,7 @@
 # Advanced Cabin
 
+Too long to read :D Just put this [File](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/AdvancedCabin-Plugin-all-platforms.zip) into your resources / plugins folder :)
+
 Advanced Cabin adds configurable passenger seats, overhead panels, oxygen masks,
 an enhanced FAP and AnyAirline seatback IFE to X-Plane 12.
 
