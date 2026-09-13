@@ -123,8 +123,13 @@ JSON alone does not contain painted images. Keep complete exports together.
 
 ## 3. Use Cabin Studio
 
-Extract the complete OS-specific ZIP. On Windows launch `Cabin Studio.exe` from
-the extracted folder. On macOS copy `Cabin Studio.app` to Applications. On Linux
+On Windows the ZIP contains a single `Cabin Studio.exe`: open it from the ZIP
+or copy it anywhere first. It prepares the included application and export engine
+once, then reuses them. If there is not enough space on the system drive, choose
+another storage folder when prompted. Project and export working files use that
+location too; previous projects are copied across once and originals are retained.
+No separate Blender install is required.
+On macOS extract the ZIP and copy `Cabin Studio.app` to Applications. On Linux
 use an archive manager preserving Unix permissions and symbolic links, then
 launch `Cabin Studio`. Linux needs a graphical desktop and Qt/WebEngine system
 libraries; Windows uses WebView2 and macOS uses WebKit. The preview needs WebGL.
@@ -140,8 +145,14 @@ manually linked helper programs are not required for editing.
 3. Adjust colors or drop artwork into **Magazine**, **Safety card** or
    **Advertisements**. Magazine and safety-card artwork are separate inputs.
 4. Open **Export cabin**. **Export layout.json** saves configuration without new
-   textures. **Export cabin folder** prepares the full cabin, then opens the
-   destination dialog. A completed build can be saved again without rebuilding.
+   textures. For a full cabin, use **Choose folder** to select the destination,
+   then **Export cabin folder**. Studio remembers the location; **Change folder**
+   chooses another. Select your livery's `objects` folder for direct placement,
+   or any folder to move the finished `advanced cabin` folder later.
+   Matching textures and completed exports are reused without rebuilding.
+   Shared colour edits on the default upholstery use prepared texture responses,
+   without starting the rendering engine. New artwork, different upholstery or
+   individual seat palettes still use the full exporter and take longer.
    Older Studio packages label these actions **Export JSON only** and **Export cabin**.
 5. Install the result in the livery's `objects` folder.
 
