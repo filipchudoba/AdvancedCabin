@@ -1,20 +1,30 @@
 # Advanced Cabin
 
-Too long to read :D Just put this [File](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/AdvancedCabin-Plugin-all-platforms.zip) into your resources / plugins folder :)
+## Quick start — TL;DR
+
+1. [Download the plugin ZIP — Windows, macOS and Linux](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.1/AdvancedCabin-Plugin-all-platforms.zip).
+2. Close X-Plane.
+3. Extract the ZIP and put the **AdvancedCabin** folder into **X-Plane 12/Resources/plugins/**.
+4. Start your supported **ToLiss A319/A320/A321**. Allow up to **about one minute** for the seats to appear.
+
+**That's it.** Aircraft setup is automatic. You do not need Cabin Studio, Blender or Python to use the plugin.
+
+Already have a cabin livery? Put its **advanced cabin** folder into **Aircraft/<aircraft>/liveries/<livery>/objects/**, then select that livery.
 
 Advanced Cabin adds configurable passenger seats, overhead panels, oxygen masks,
 an enhanced FAP and AnyAirline seatback IFE to X-Plane 12.
 
-[Download version 1.0.0](https://github.com/filipchudoba/AdvancedCabin/releases/tag/v1.0.0)
+[Download version 1.0.1](https://github.com/filipchudoba/AdvancedCabin/releases/tag/v1.0.1)
  · [AnyAirline IFE provider](https://anyairline.app/)
 
 > **Loading seats:** Seats may take up to about **one minute** to appear in X-Plane. Please allow the cabin to finish loading.
 
 ## Before downloading
 
-Version 1.0.0 supports **already prepared Advanced Cabin ToLiss A319/A320/A321
-installations**. Aircraft object attachments, click regions and sound integration
-are required; this package does not retrofit an untouched ToLiss aircraft.
+Version 1.0.1 prepares supported **ToLiss A319/A320/A321 aircraft automatically**
+at X-Plane startup. Put the complete AdvancedCabin folder in Resources/plugins.
+Integration recipes match A319 V1.9, A320 V1.2.1 and A321 V1.6 reference files;
+unknown or conflicting aircraft files are reported instead of overwritten.
 A339/A346 support is not included in this release.
 
 Use the plugin to fly, Cabin Studio to create layouts and liveries, and the
@@ -24,7 +34,7 @@ and downloadable releases.
 
 ## Downloads
 
-- [Native X-Plane plugin — all operating systems](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/AdvancedCabin-Plugin-all-platforms.zip)
+- [Native X-Plane plugin — all operating systems](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.1/AdvancedCabin-Plugin-all-platforms.zip)
 - [PSD paintkit](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/Advanced-Cabin-Paintkit.zip)
 - [Cabin Studio — Windows x64](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/Cabin-Studio-windows-x64.zip)
 - [Cabin Studio — Linux x64](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/Cabin-Studio-linux-x64.zip)
@@ -60,11 +70,11 @@ install or link Blender, Python or Node.js. The native plugin contains none of
 those programs. The paintkit has 4K source artwork; texture resolution is not
 part of the livery folder name.
 
-**Compatibility:** prepared Advanced Cabin ToLiss A319/A320/A321 installations.
-Aircraft object attachments, click regions and sound integration must already
-be installed. This ZIP alone does not convert an untouched ToLiss aircraft.
-A339/A346 work is deferred. Automated checks cover the repaired native plugin;
-the performance repair has been confirmed in X-Plane; the new IFE lighting still needs visual confirmation.
+**Compatibility:** ToLiss A319/A320/A321 for X-Plane 12. The plugin prepares
+supported aircraft automatically at simulator startup, with verified backups.
+The integration recipes currently match A319 V1.9, A320 V1.2.1 and A321 V1.6
+reference files. Unknown or conflicting aircraft files are reported in the
+plugin's installation status instead of being overwritten. A339/A346 are deferred.
 
 > **Loading seats:** Seats may take up to about **one minute** to appear in X-Plane. Allow the cabin to finish loading.
 
@@ -94,6 +104,24 @@ not duplicate Advanced Cabin installations.
 Use X-Plane 12 exposing SDK 4.2 or later. Windows/Linux are x86-64; macOS is
 universal. Preview Mac binaries are ad-hoc signed, not Apple-notarized. Approve
 only the downloaded app/plugin you trust through normal OS security controls.
+
+### Aircraft detection and first start
+
+Start X-Plane normally after installing the complete plugin folder. Advanced
+Cabin detects supported ToLiss aircraft under `Aircraft`, prepares their object
+attachments, click regions and sound integration, and backs up original files.
+No external installer, Blender or Python is needed. No automatic aircraft reload
+is performed. Choose the aircraft and allow its cabin to finish loading.
+
+`Resources/plugins/AdvancedCabin/aircrafts.json` lists detected folders relative
+to `Aircraft`, including renamed folders and nested paths. For example,
+`"a321": ["Airliners/My A321"]`. Use forward slashes and exact case on every OS.
+Open it with **Open aircraft folder configuration** in the plugin menu. If you
+add a new aircraft while X-Plane is running, restart X-Plane to prepare it.
+
+**Aircraft installation status / details** explains unsupported versions or
+conflicting files. Original file backups and installation receipts are under
+`AdvancedCabin/data/aircraft-backups`. Livery files are not changed.
 
 ## 2. Install a cabin livery
 
@@ -270,7 +298,7 @@ See FAP help and [AnyAirline Guides](https://anyairline.app/guides) for more con
 
 | Symptom | Check |
 | --- | --- |
-| No cabin changes | Prepared aircraft integration, plugin enabled, correct folder nesting, no duplicate runtime |
+| No cabin changes | Aircraft installation status, supported ToLiss version, plugin enabled, correct folder nesting, no duplicate runtime |
 | Wrong livery colors | Selected external livery; exact `objects/advanced cabin` path; include textures, not only JSON |
 | White seats | Complete repaired plugin; missing texture messages in `Log.txt`. This revision fixes paths with spaces/Unicode |
 | Very low FPS in the first native preview | Replace with this repaired build while X-Plane is closed; the expensive renderer array-copy path is removed |
