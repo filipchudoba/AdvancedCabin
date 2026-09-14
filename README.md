@@ -2,7 +2,7 @@
 
 ## Quick start — TL;DR
 
-1. [Download the plugin ZIP — Windows, macOS and Linux](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.1/AdvancedCabin-Plugin-all-platforms.zip).
+1. [Download the plugin ZIP — Windows, macOS and Linux](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.2/AdvancedCabin-Plugin-all-platforms.zip).
 2. Close X-Plane.
 3. Extract the ZIP and put the **AdvancedCabin** folder into **X-Plane 12/Resources/plugins/**.
 4. Start your supported **ToLiss A319/A320/A321**. Allow up to **about one minute** for the seats to appear.
@@ -14,17 +14,19 @@ Already have a cabin livery? Put its **advanced cabin** folder into **Aircraft/<
 Advanced Cabin adds configurable passenger seats, overhead panels, oxygen masks,
 an enhanced FAP and AnyAirline seatback IFE to X-Plane 12.
 
-[Download version 1.0.1](https://github.com/filipchudoba/AdvancedCabin/releases/tag/v1.0.1)
+[Download version 1.0.2](https://github.com/filipchudoba/AdvancedCabin/releases/tag/v1.0.2)
  · [AnyAirline IFE provider](https://anyairline.app/)
 
 > **Loading seats:** Seats may take up to about **one minute** to appear in X-Plane. Please allow the cabin to finish loading.
 
 ## Before downloading
 
-Version 1.0.1 prepares supported **ToLiss A319/A320/A321 aircraft automatically**
+Version 1.0.2 prepares supported **ToLiss A319/A320/A321 aircraft automatically**
 at X-Plane startup. Put the complete AdvancedCabin folder in Resources/plugins.
 Integration recipes match A319 V1.9, A320 V1.2.1 and A321 V1.6 reference files;
-unknown or conflicting aircraft files are reported instead of overwritten.
+unknown or conflicting geometry files are reported instead of overwritten.
+Different sound packs are preserved and do not block cabin installation; optional
+extra call-button sounds may be unavailable.
 A339/A346 support is not included in this release.
 
 Use the plugin to fly, Cabin Studio to create layouts and liveries, and the
@@ -34,7 +36,7 @@ and downloadable releases.
 
 ## Downloads
 
-- [Native X-Plane plugin — all operating systems](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.1/AdvancedCabin-Plugin-all-platforms.zip)
+- [Native X-Plane plugin — all operating systems](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.2/AdvancedCabin-Plugin-all-platforms.zip)
 - [PSD paintkit](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/Advanced-Cabin-Paintkit.zip)
 - [Cabin Studio — Windows x64](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/Cabin-Studio-windows-x64.zip)
 - [Cabin Studio — Linux x64](https://github.com/filipchudoba/AdvancedCabin/releases/download/v1.0.0/Cabin-Studio-linux-x64.zip)
